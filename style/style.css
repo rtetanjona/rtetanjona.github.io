@@ -99,3 +99,49 @@ p{
     text-align: left;
     color: white;
 }
+/* --- RESPONSIVE DESIGN --- */
+
+@media screen and (max-width: 768px) {
+    /* On empile les éléments verticalement sur mobile */
+    .corps {
+        flex-direction: column-reverse; /* L'image passera au-dessus du texte */
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    /* Ajustement de la navigation */
+    header {
+        height: auto;
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .tete {
+        margin-right: 0;
+        margin-top: 15px;
+    }
+
+    .tete ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Ajustement de la taille de l'image */
+    .img {
+        width: 250px;
+        height: 250px;
+        margin: 20px 0;
+    }
+
+    /* Ajustement du texte */
+    .app {
+        width: 100%;
+        height: auto;
+    }
+
+    p {
+        text-align: center; /* Plus lisible sur mobile */
+    }
+}
